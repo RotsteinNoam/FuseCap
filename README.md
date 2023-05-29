@@ -1,7 +1,6 @@
-# FuseCap: Large Language Model for Visual Data Fusion in Enriched Caption Generation
+# FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions
 
 Welcome to the GitHub repository of FuseCap, a framework designed to generate semantically rich image captions.
-
 
 ## Resources
 

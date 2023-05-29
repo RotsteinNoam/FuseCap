@@ -4,11 +4,11 @@ Welcome to the GitHub repository of FuseCap, a framework designed to generate se
 
 ## Resources
 
-- 📝 **Read the Paper**: You can find the paper [here](https://google.com).
-  
 - 💻 **Project Page**: For more details, visit the official [project page](https://rotsteinnoam.github.io/FuseCap/).
-  
-- 🚀 **Demo**: Try out our FuseCap model  BLIP-based model [demo](https://huggingface.co/spaces/noamrot/FuseCap) hosted on Huggingface Spaces.
+
+- 📝 **Read the Paper**: You can find the paper [here](https://google.com).
+    
+- 🚀 **Demo**: Try out our BLIP-based model [demo](https://huggingface.co/spaces/noamrot/FuseCap) trained using FuseCap, hosted on Huggingface Spaces.
 
 ## Upcoming Updates
 

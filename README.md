@@ -17,12 +17,10 @@ The official codebase and trained models for this project will be released soon.
 ## BibTeX
 
 ```
-@misc{rotstein2023fusecap,
-      title={FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions}, 
-      author={Noam Rotstein and David Bensaid and Shaked Brody and Roy Ganz and Ron Kimmel},
-      year={2023},
-      eprint={2305.17718},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{rotstein2023fusecap,
+  title={FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions},
+  author={Rotstein, Noam and Bensaid, David and Brody, Shaked and Ganz, Roy and Kimmel, Ron},
+  journal={arXiv preprint arXiv:2305.17718},
+  year={2023}
 }
 ```

@@ -12,7 +12,23 @@ Welcome to the GitHub repository of FuseCap, a framework designed to generate se
 
 ## Upcoming Updates
 
-The official codebase and trained models for this project will be released soon.
+The official datasets, codebase and trained models for this project will be released soon.
+
+
+##  Datasets
+We provide the fused captions that were created using the FuseCap framework.
+These captions were used for both pretraining and training phases of our image captioning model. 
+The images can downloaded from the respective dataset websites or the provided urls (SBU, CC3, CC12).
+
+Dataset | FuseCap Captions
+--- | :---:
+COCO | <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/_layouts/15/download.aspx?UniqueId=28819a77%2D24aa%2D46b8%2Dba21%2D133522a0f081">Train</a>, <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fsnoamr%5Fcampus%5Ftechnion%5Fac%5Fil%2FDocuments%2Ffusecap%5Fdatasets%2Fcoco%5Fkarpathy%5Fval%2Ejson">Val</a>, <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fsnoamr%5Fcampus%5Ftechnion%5Fac%5Fil%2FDocuments%2Ffusecap%5Fdatasets%2Fcoco%5Fkarpathy%5Ftest%2Ejson">Test</a>
+SBU | Soon
+CC3 | Soon
+CC12 | Soon
+Flickr30 | Soon
+
+
 
 ## BibTeX
 

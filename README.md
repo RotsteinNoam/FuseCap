@@ -22,9 +22,9 @@ The images can downloaded from the respective dataset websites or the provided u
 
 Dataset | FuseCap Captions
 --- | :---:
-COCO | <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/_layouts/15/download.aspx?UniqueId=28819a77%2D24aa%2D46b8%2Dba21%2D133522a0f081">Train</a>, <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fsnoamr%5Fcampus%5Ftechnion%5Fac%5Fil%2FDocuments%2Ffusecap%5Fdatasets%2Fcoco%5Fkarpathy%5Fval%2Ejson">Val</a>, <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fsnoamr%5Fcampus%5Ftechnion%5Fac%5Fil%2FDocuments%2Ffusecap%5Fdatasets%2Fcoco%5Fkarpathy%5Ftest%2Ejson">Test</a>
-SBU | <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fsnoamr%5Fcampus%5Ftechnion%5Fac%5Fil%2FDocuments%2Ffusecap%5Fdatasets%2FSBU%5FFuseCap%2Ejson">Train</a>
-CC3 | <a href="https://technionmail-my.sharepoint.com/personal/snoamr_campus_technion_ac_il/Documents/fusecap_datasets/CC3_FuseCap.json">Train</a>
+COCO | <a href="https://zenodo.org/record/8132276/files/coco_karpathy_train.json?download=1">Train</a>, <a href="https://zenodo.org/record/8132314/files/coco_karpathy_val.json?download=1">Val</a>, <a href="https://zenodo.org/record/8132335/files/coco_karpathy_test.json?download=1">Test</a>
+SBU | <a href="https://zenodo.org/record/8133271/files/SBU_FuseCap.json?download=1">Train</a>
+CC3 | <a href="https://zenodo.org/record/8133285/files/CC3_FuseCap.json?download=1">Train</a>
 CC12 | Soon
 Flickr30 | Soon
 

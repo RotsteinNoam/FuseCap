@@ -17,8 +17,8 @@ Welcome to the GitHub repository of FuseCap, a framework designed to enhance ima
 
 ### Done
 
-- ✅ HuggingFace Captioner demo, including captioner weights.
 - ✅ Release of the FuseCap dataset.
+- ✅ HuggingFace Captioner demo, including captioner weights.
 
 ### To Do
 

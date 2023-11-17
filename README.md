@@ -11,9 +11,17 @@ Welcome to the GitHub repository of FuseCap, a framework designed to enhance ima
 - 🚀 **Demo**: Try out our BLIP-based model [demo](https://huggingface.co/spaces/noamrot/FuseCap) trained using FuseCap, hosted on Huggingface Spaces.
 
 
-## Upcoming Updates
+## Release Status
 
-The official datasets, codebase and trained models for this project will be released soon.
+### Done
+
+- ✅ HuggingFace Captioner demo, including captioner weights.
+- ✅ Release of the FuseCap dataset.
+
+### To Do
+
+- 🔜 Publication of the complete codebase.
+- 🔜 LLM Fuser weights and code release.
 
 
 ##  Hugging Face Demo

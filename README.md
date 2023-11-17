@@ -2,6 +2,8 @@
 
 Welcome to the GitHub repository of FuseCap, a framework designed to enhance image captioning by incorporating detailed visual information into traditional captions.
 
+🎉 Exciting News: Paper accepted at WACV 2024!
+
 ## Resources
 
 - 💻 **Project Page**: For more details, visit the official [project page](https://rotsteinnoam.github.io/FuseCap/).

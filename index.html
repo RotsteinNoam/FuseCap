@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions</title>
+  <title>FuseCap: Leveraging Large Language Models for Enriched Fused Image Captions</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <style>
     body {
@@ -173,7 +173,7 @@
   <div class="main-container">
     <h1>FuseCap</h1>
     <br>
-    <h2>Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions</h2>
+    <h2>Leveraging Large Language Models for Enriched Fused Image Captions</h2>
     <!-- <p>Noam Rotstein<span style="font-size: 18px;">*</span> &nbsp;&nbsp; David Bensaid<span style="font-size: 18px;">*</span> &nbsp;&nbsp; Shaked Brody &nbsp;&nbsp; Roy Ganz &nbsp;&nbsp; Ron Kimmel</p> -->
     <p class="author-links">
       <a href="mailto:snoamr@cs.technion.ac.il">Noam Rotstein</a><span style="font-size: 18px;">*</span> &nbsp;&nbsp; 
@@ -214,49 +214,16 @@
     </div>
   <br>
   <h3>Abstract</h3>
-  <p> Image captioning is a central task in computer vision which has experienced substantial progress following the advent of vision-language pre-training techniques. In this paper, we highlight a frequently overlooked limitation of captioning models that often fail to capture semantically significant elements. This drawback can be traced back to the text-image datasets; while their captions typically offer a general depiction of image content, they frequently omit salient details. To mitigate this limitation, we propose FuseCap - a novel method for enriching captions with additional visual information, obtained from vision experts, such as object detectors, attribute recognizers, and Optical Character Recognizers (OCR). Our approach fuses the outputs of such vision experts with the original caption using a large language model (LLM), yielding enriched captions that present a comprehensive image description. We validate the effectiveness of the proposed caption enrichment method through both quantitative and qualitative analysis. Our method is then used to curate the training set of a captioning model based BLIP which surpasses current state-of-the-art approaches in generating accurate and detailed captions while using significantly fewer parameters and training data.
-    As additional contributions, we provide a dataset comprising of 12M image-enriched caption pairs and show that the proposed method largely improves image-text retrieval.</p>
+  <p> The advent of vision-language pre-training techniques enhanced substantial progress in the development of models for image captioning. However, these models frequently produce generic captions and may omit semantically important image details. This limitation can be traced back to the image-text datasets; while their captions typically offer a general description of image content, they frequently omit salient details. Considering the magnitude of these datasets, manual reannotation is impractical, emphasizing the need for an automated approach. To address this challenge, we leverage existing captions and explore augmenting them with visual details using "frozen" vision experts including an object detector, an attribute recognizer, and an Optical Character Recognizer (OCR). Our proposed method, FuseCap, fuses the outputs of such vision experts with the original captions using a large language model (LLM), yielding comprehensive image descriptions. We automatically curate a training set of 12M image-enriched caption pairs. These pairs undergo extensive evaluation through both quantitative and qualitative analyses. Subsequently, this data is utilized to train a captioning generation BLIP-based model. This model outperforms current state-of-the-art approaches, producing more precise and detailed descriptions, demonstrating the effectiveness of the proposed data-centric approach. We release this large-scale dataset of enriched image-caption pairs for the community.</p>
   <br>
-  <h3>Captioning Examples</h3>
-  <div class="example-container">
-    <div class="example-row">
-      <img class="example-image" src="all_examples_compressed/0-surfer.png" alt="Example Image 1">
-      <img class="example-image" src="all_examples_compressed/0-bike.png" alt="Example Image 2">
-    </div>
-    <div class="example-row">
-      <img class="example-image" src="all_examples_compressed/1-couple.png" alt="Example Image 3">
-      <img class="example-image" src="all_examples_compressed/2-snowboard.png" alt="Example Image 4">
-    </div>
-    <div class="example-row">
-      <img class="example-image" src="all_examples_compressed/3-calm_water.png" alt="Example Image 5">
-      <img class="example-image" src="all_examples_compressed/4-cow.png" alt="Example Image 6">
-    </div>
-    <div class="example-row">
-      <img class="example-image" src="all_examples_compressed/5-mini-mot.png" alt="Example Image 7">
-      <img class="example-image" src="all_examples_compressed/6-horse.png" alt="Example Image 8">
-    </div>
-    <div class="example-row">
-      <img class="example-image" src="all_examples_compressed/7-frisbee-woman.png" alt="Example Image 9">
-      <img class="example-image" src="all_examples_compressed/8-elephant.png" alt="Example Image 10">
-    </div>
-    <div class="example-row">
-      <img class="example-image" src="all_examples_compressed/9-bird.png" alt="Example Image 11">
-      <img class="example-image" src="all_examples_compressed/10-helicopter.png" alt="Example Image 12">
-    </div>
-    <div class="example-row">
-      <img class="example-image" src="all_examples_compressed/11-vegi-blend.png" alt="Example Image 13">
-      <img class="example-image" src="all_examples_compressed/12-umbrella-woman.png" alt="Example Image 14">
-    </div>
-  </div>
-  <br><br>
   <h3>Method</h3>
   <div class="method-container">
-    <p class="image-description">Our two-stage framework illustration. In the first stage – we enrich existing image captions using the proposed FuseCap strategy. Visual experts extract meaningful information from images, which is fused with the original captions by an LLM Fuser into rich captions. In the second stage, image datasets, coupled with the enriched captions from the first stage, are utilized to pre-train and fine-tune a comprehensive image-captioning model.</p>
+    <p class="image-description">Our framework begins with the enrichment of existing image captions using the proposed FuseCap strategy. Visual experts extract meaningful information from images. This information is then fused with the original captions by an LLM Fuser, resulting in rich captions. Following this, image datasets, coupled with these enriched fused image captions, are utilized to pre-train and fine-tune a comprehensive image-captioning model.</p>
     <br>
-    <img class="method-image" src="method_images_compressed/method3a.png" alt="Method Image stage 1">
-    <p class="image-description">First Stage: Fusing Enriched Captions</p>
+    <img class="method-image" src="method_images_compressed/method3a2.png" alt="Method Image stage 1">
+    <p class="image-description">(A) Fusing Enriched Captions</p>
     <img class="method-image" src="method_images_compressed/method3b.png" alt="Method Image stage 2">
-    <p class="image-description"> Second Stage: Training a Captioning model</p>
+    <p class="image-description"> (B) Training a Captioning Model</p>
   </div>
   <br><br>
   <h3>FuseCap Dataset Examples</h3>
@@ -289,16 +256,48 @@
       <img class="example-image" src="fusecap_examples_compressed/Picture5.png" alt="Example Image 1">
     </div>
   </div>
-  <br>
+  <br><br>
+  <h3>Trained Captioning Model Examples</h3>
+  <div class="example-container">
+    <div class="example-row">
+      <img class="example-image" src="all_examples_compressed/0-surfer.png" alt="Example Image 1">
+      <img class="example-image" src="all_examples_compressed/0-bike.png" alt="Example Image 2">
+    </div>
+    <div class="example-row">
+      <img class="example-image" src="all_examples_compressed/1-couple.png" alt="Example Image 3">
+      <img class="example-image" src="all_examples_compressed/2-snowboard.png" alt="Example Image 4">
+    </div>
+    <div class="example-row">
+      <img class="example-image" src="all_examples_compressed/3-calm_water.png" alt="Example Image 5">
+      <img class="example-image" src="all_examples_compressed/4-cow.png" alt="Example Image 6">
+    </div>
+    <div class="example-row">
+      <img class="example-image" src="all_examples_compressed/5-mini-mot.png" alt="Example Image 7">
+      <img class="example-image" src="all_examples_compressed/6-horse.png" alt="Example Image 8">
+    </div>
+    <div class="example-row">
+      <img class="example-image" src="all_examples_compressed/7-frisbee-woman.png" alt="Example Image 9">
+      <img class="example-image" src="all_examples_compressed/8-elephant.png" alt="Example Image 10">
+    </div>
+    <div class="example-row">
+      <img class="example-image" src="all_examples_compressed/9-bird.png" alt="Example Image 11">
+      <img class="example-image" src="all_examples_compressed/10-helicopter.png" alt="Example Image 12">
+    </div>
+    <div class="example-row">
+      <img class="example-image" src="all_examples_compressed/11-vegi-blend.png" alt="Example Image 13">
+      <img class="example-image" src="all_examples_compressed/12-umbrella-woman.png" alt="Example Image 14">
+    </div>
+  </div>
   <h3>Results</h3>
   <div class="results-container">
   <p>Our captioning model surpasses the performance of leading state-of-the-art captioning models on the COCO dataset in terms of CLIPScore.</p>
   <img class="table-image" src="table.png" alt="Results Image">
+  <br>
 </div>
 <div style="width: 55%; margin: 0 auto; text-align: left;">
   <h3 style="font-size: 1.8em;">BibTeX</h3>
   <pre style="background-color: #e6dddd; padding: 10px;"><code>@article{rotstein2023fusecap,
-  title={FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions},
+  title={FuseCap: FuseCap: Leveraging Large Language Models for Enriched Fused Image Captions},
   author={Rotstein, Noam and Bensaid, David and Brody, Shaked and Ganz, Roy and Kimmel, Ron},
   journal={arXiv preprint arXiv:2305.17718},
   year={2023}

@@ -1,6 +1,6 @@
-# FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions
+# FuseCap: Leveraging Large Language Models for Enriched Fused Image Captions
 
-Welcome to the GitHub repository of FuseCap, a framework designed to generate semantically rich image captions.
+Welcome to the GitHub repository of FuseCap, a framework designed to enhance image captioning by incorporating detailed visual information into traditional captions.
 
 ## Resources
 
@@ -10,10 +10,35 @@ Welcome to the GitHub repository of FuseCap, a framework designed to generate se
     
 - 🚀 **Demo**: Try out our BLIP-based model [demo](https://huggingface.co/spaces/noamrot/FuseCap) trained using FuseCap, hosted on Huggingface Spaces.
 
+
 ## Upcoming Updates
 
 The official datasets, codebase and trained models for this project will be released soon.
 
+
+##  Hugging Face Demo
+Try out our BLIP-based captioning model trained using FuseCap quickly with this Python snippet.
+This code demonstrates how to use the model to generate captions for an image:
+
+```python
+import requests
+from PIL import Image
+from transformers import BlipProcessor, BlipForConditionalGeneration
+import torch
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+processor = BlipProcessor.from_pretrained("noamrot/FuseCap")
+model = BlipForConditionalGeneration.from_pretrained("noamrot/FuseCap").to(device)
+
+img_url = 'https://huggingface.co/spaces/noamrot/FuseCap/resolve/main/bike.jpg' 
+raw_image = Image.open(requests.get(img_url, stream=True).raw).convert('RGB')
+
+text = "a picture of "
+inputs = processor(raw_image, text, return_tensors="pt").to(device)
+
+out = model.generate(**inputs, num_beams = 3)
+print(processor.decode(out[0], skip_special_tokens=True))
+```
 
 ##  Datasets
 We provide the fused captions that were created using the FuseCap framework.

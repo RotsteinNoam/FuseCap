@@ -65,12 +65,11 @@ CC12 | <a href="https://zenodo.org/records/10150600/files/CC12_FuseCap.json?down
 ## BibTeX
 
 ```
-@misc{rotstein2023fusecap,
-      title={FuseCap: Leveraging Large Language Models for Enriched Fused Image Captions}, 
-      author={Noam Rotstein and David Bensaid and Shaked Brody and Roy Ganz and Ron Kimmel},
-      year={2023},
-      eprint={2305.17718},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{rotstein2024fusecap,
+  title={Fusecap: Leveraging large language models for enriched fused image captions},
+  author={Rotstein, Noam and Bensa{\"\i}d, David and Brody, Shaked and Ganz, Roy and Kimmel, Ron},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={5689--5700},
+  year={2024}
 }
 ```
